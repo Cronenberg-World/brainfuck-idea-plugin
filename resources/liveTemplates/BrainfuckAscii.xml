@@ -1,0 +1,1153 @@
+<!--
+  ~ Copyright 2021 the CronenbergWorld Contributors
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<templateSet group="BrainfuckAscii">
+    <template name="bf_set_SOH"
+              value="+"
+              description="SOH"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_STX"
+              value="++"
+              description="STX"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_ETX"
+              value="+++"
+              description="ETX"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_EOT"
+              value="++++"
+              description="EOT"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_ENQ"
+              value="+++++"
+              description="ENQ"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_ACK"
+              value="++++++"
+              description="ACK"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_BEL"
+              value="+++++++"
+              description="BEL"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_BS"
+              value="++++++++"
+              description="BS"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_TAB"
+              value="+++++++++"
+              description="TAB"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_LF"
+              value="++++++++++"
+              description="LF"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_VT"
+              value="+++++++++++"
+              description="VT"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_FF"
+              value="++++++++++++"
+              description="FF"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_CR"
+              value="+++++++++++++"
+              description="CR"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_SO"
+              value="++++++++++++++"
+              description="SO"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_SI"
+              value="+++++++++++++++"
+              description="SI"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_DLE"
+              value="++++++++++++++++"
+              description="DLE"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_DC1"
+              value="+++++++++++++++++"
+              description="DC1"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_DC2"
+              value="++++++++++++++++++"
+              description="DC2"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_DC3"
+              value="+++++++++++++++++++"
+              description="DC3"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_DC4"
+              value="++++++++++++++++++++"
+              description="DC4"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_NAK"
+              value="+++++++++++++++++++++"
+              description="NAK"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_SYN"
+              value="++++++++++++++++++++++"
+              description="SYN"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_ETB"
+              value="+++++++++++++++++++++++"
+              description="ETB"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_CAN"
+              value="++++++++++++++++++++++++"
+              description="CAN"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_EM"
+              value="+++++++++++++++++++++++++"
+              description="EM"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_SUB"
+              value="++++++++++++++++++++++++++"
+              description="SUB"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_ESC"
+              value="+++++++++++++++++++++++++++"
+              description="ESC"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_FS"
+              value="++++++++++++++++++++++++++++"
+              description="FS"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_GS"
+              value="+++++++++++++++++++++++++++++"
+              description="GS"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_RS"
+              value="++++++++++++++++++++++++++++++"
+              description="RS"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_US"
+              value="+++++++++++++++++++++++++++++++"
+              description="US"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_(space)"
+              value="++++++++++++++++++++++++++++++++"
+              description="(space)"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_!"
+              value="+++++++++++++++++++++++++++++++++"
+              description="!"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_&quot;"
+              value="++++++++++++++++++++++++++++++++++"
+              description="&quot;"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_#"
+              value="+++++++++++++++++++++++++++++++++++"
+              description="#"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_$"
+              value="++++++++++++++++++++++++++++++++++++"
+              description="$"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_%"
+              value="+++++++++++++++++++++++++++++++++++++"
+              description="%"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_&amp;"
+              value="++++++++++++++++++++++++++++++++++++++"
+              description="&amp;"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_&apos;"
+              value="+++++++++++++++++++++++++++++++++++++++"
+              description="&apos;"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_("
+              value="++++++++++++++++++++++++++++++++++++++++"
+              description="("
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_)"
+              value="+++++++++++++++++++++++++++++++++++++++++"
+              description=")"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_*"
+              value="++++++++++++++++++++++++++++++++++++++++++"
+              description="*"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_+"
+              value="+++++++++++++++++++++++++++++++++++++++++++"
+              description="+"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_,"
+              value="++++++++++++++++++++++++++++++++++++++++++++"
+              description=","
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_-"
+              value="+++++++++++++++++++++++++++++++++++++++++++++"
+              description="-"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_."
+              value="++++++++++++++++++++++++++++++++++++++++++++++"
+              description="."
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_/"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++"
+              description="/"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_0"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="0"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_1"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="1"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_2"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="2"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_3"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="3"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_4"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="4"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_5"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="5"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_6"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="6"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_7"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="7"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_8"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="8"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_9"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="9"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_:"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description=":"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_;"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description=";"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_&lt;"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="&lt;"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_="
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="="
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_&gt;"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="&gt;"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_?"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="?"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_@"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="@"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_A"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="A"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_B"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="B"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_C"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="C"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_D"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="D"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_E"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="E"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_F"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="F"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_G"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="G"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_H"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="H"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_I"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="I"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_J"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="J"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_K"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="K"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_L"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="L"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_M"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="M"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_N"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="N"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_O"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="O"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_P"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="P"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_Q"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="Q"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_R"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="R"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_S"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="S"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_T"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="T"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_U"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="U"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_V"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="V"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_W"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="W"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_X"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="X"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_Y"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="Y"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_Z"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="Z"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_["
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="["
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_\"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="\"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_]"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="]"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_^"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="^"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set__"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="_"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_`"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="`"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_a"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="a"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_b"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="b"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_c"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="c"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_d"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="d"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_e"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="e"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_f"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="f"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_g"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="g"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_h"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="h"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_i"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="i"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_j"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="j"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_k"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="k"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_l"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="l"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_m"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="m"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_n"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="n"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_o"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="o"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_p"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="p"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_q"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="q"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_r"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="r"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_s"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="s"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_t"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="t"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_u"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="u"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_v"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="v"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_w"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="w"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_x"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="x"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_y"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="y"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_z"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="z"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_{"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="{"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_|"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="|"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_}"
+              value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="}"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+    <template name="bf_set_~"
+              value="++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+              description="~"
+              toReformat="true"
+              toShortenFQNames="false">
+        <context>
+            <option name="BrainfuckAscii" value="true"/>
+        </context>
+    </template>
+
+</templateSet>

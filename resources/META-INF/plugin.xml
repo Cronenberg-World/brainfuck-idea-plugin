@@ -1,0 +1,191 @@
+<!--
+  ~ Copyright 2021 the CronenbergWorld Contributors
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<idea-plugin>
+    <id>io.cronenbergworld.brainfuck</id>
+    <name>Brainfuck Language</name>
+    <vendor email="support@cronenbergworld.io" url="http://cronenbergworld.io">Cronenberg World</vendor>
+
+    <description>_</description>
+    <change-notes>_</change-notes>
+    <version>_</version>
+    <idea-version/>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType name="Brainfuck" implementationClass="io.cronenbergworld.brainfuck.BrainfuckLanguageFileType"
+                  fieldName="INSTANCE" language="Brainfuck" extensions="bf"/>
+        <lang.parserDefinition language="Brainfuck"
+                               implementationClass="io.cronenbergworld.brainfuck.BrainfuckParserDefinition"/>
+        <lang.ast.factory language="Brainfuck" implementationClass="io.cronenbergworld.brainfuck.BrainfuckCoreFactory"/>
+        <lang.syntaxHighlighterFactory language="Brainfuck"
+                                       implementationClass="io.cronenbergworld.brainfuck.BrainfuckSyntaxHighlighterFactory"/>
+        <colorSettingsPage implementation="io.cronenbergworld.brainfuck.BrainfuckColorSettingsPage"/>
+        <defaultLiveTemplates file="/liveTemplates/BrainfuckAscii.xml"/>
+        <liveTemplateContext implementation="io.cronenbergworld.brainfuck.BrainfuckAsciiLiveTemplate"/>
+        <additionalTextAttributes scheme="Default" file="colorSchemes/BrainfuckDefault.xml"/>
+        <additionalTextAttributes scheme="Darcula" file="colorSchemes/BrainfuckDark.xml"/>
+        <configurationType implementation="io.cronenbergworld.brainfuck.runner.BrainfuckRunConfigurationType"/>
+
+        <internalFileTemplate name="Brainfuck File"/>
+        <internalFileTemplate name="196" />
+        <internalFileTemplate name="196-commented" />
+        <internalFileTemplate name="2d_table" />
+        <internalFileTemplate name="666" />
+        <internalFileTemplate name="abc" />
+        <internalFileTemplate name="asciiart" />
+        <internalFileTemplate name="atoi" />
+        <internalFileTemplate name="awib" />
+        <internalFileTemplate name="bench-1" />
+        <internalFileTemplate name="bench-2" />
+        <internalFileTemplate name="bfbf" />
+        <internalFileTemplate name="bfc" />
+        <internalFileTemplate name="bfcl" />
+        <internalFileTemplate name="bfi446" />
+        <internalFileTemplate name="bfi" />
+        <internalFileTemplate name="bottles-1" />
+        <internalFileTemplate name="bottles-2" />
+        <internalFileTemplate name="bottles-3" />
+        <internalFileTemplate name="bubblesort-1" />
+        <internalFileTemplate name="bubblesort-2" />
+        <internalFileTemplate name="busy-beaver" />
+        <internalFileTemplate name="busy-beaver-overflow" />
+        <internalFileTemplate name="cat-1" />
+        <internalFileTemplate name="cat-2" />
+        <internalFileTemplate name="cat-3" />
+        <internalFileTemplate name="cell-size-1" />
+        <internalFileTemplate name="cell-size-2" />
+        <internalFileTemplate name="cell-size-3" />
+        <internalFileTemplate name="cell-size-4" />
+        <internalFileTemplate name="cell-size-5" />
+        <internalFileTemplate name="cgbfi" />
+        <internalFileTemplate name="char" />
+        <internalFileTemplate name="chess" />
+        <internalFileTemplate name="collatz" />
+        <internalFileTemplate name="counter" />
+        <internalFileTemplate name="css" />
+        <internalFileTemplate name="dbf2c" />
+        <internalFileTemplate name="dbfi" />
+        <internalFileTemplate name="decss" />
+        <internalFileTemplate name="div-10" />
+        <internalFileTemplate name="dvorak" />
+        <internalFileTemplate name="easy-opt" />
+        <internalFileTemplate name="e" />
+        <internalFileTemplate name="echo" />
+        <internalFileTemplate name="endtest" />
+        <internalFileTemplate name="factor" />
+        <internalFileTemplate name="fib" />
+        <internalFileTemplate name="gameoflife" />
+        <internalFileTemplate name="golden-ratio" />
+        <internalFileTemplate name="ha" />
+        <internalFileTemplate name="hanoi" />
+        <internalFileTemplate name="hanoi-opt" />
+        <internalFileTemplate name="head" />
+        <internalFileTemplate name="hello" />
+        <internalFileTemplate name="hello-short" />
+        <internalFileTemplate name="htmlconv" />
+        <internalFileTemplate name="impeccable" />
+        <internalFileTemplate name="insertionsort" />
+        <internalFileTemplate name="jabh" />
+        <internalFileTemplate name="ks" />
+        <internalFileTemplate name="long" />
+        <internalFileTemplate name="lost-kingdom" />
+        <internalFileTemplate name="mac2unix" />
+        <internalFileTemplate name="mandelbrot" />
+        <internalFileTemplate name="mandelbrot-extreme" />
+        <internalFileTemplate name="mandelbrot-huge" />
+        <internalFileTemplate name="mandelbrot-opt" />
+        <internalFileTemplate name="mandelbrot-tiny" />
+        <internalFileTemplate name="mandelbrot-titannic" />
+        <internalFileTemplate name="mul-10" />
+        <internalFileTemplate name="mul" />
+        <internalFileTemplate name="numwarp" />
+        <internalFileTemplate name="oobrain" />
+        <internalFileTemplate name="order" />
+        <internalFileTemplate name="packbits" />
+        <internalFileTemplate name="password-vault" />
+        <internalFileTemplate name="pi-16" />
+        <internalFileTemplate name="pi-digits" />
+        <internalFileTemplate name="power" />
+        <internalFileTemplate name="prime" />
+        <internalFileTemplate name="prime-double" />
+        <internalFileTemplate name="prttab" />
+        <internalFileTemplate name="quicksort" />
+        <internalFileTemplate name="quine-392" />
+        <internalFileTemplate name="quine-400" />
+        <internalFileTemplate name="quine-410" />
+        <internalFileTemplate name="quine-410-commented" />
+        <internalFileTemplate name="quine-414" />
+        <internalFileTemplate name="quine-505" />
+        <internalFileTemplate name="quine-505-commented" />
+        <internalFileTemplate name="quine-540" />
+        <internalFileTemplate name="quine-550" />
+        <internalFileTemplate name="quine-8780" />
+        <internalFileTemplate name="quine-bock" />
+        <internalFileTemplate name="quine-br" />
+        <internalFileTemplate name="quine-dc" />
+        <internalFileTemplate name="quine-jb" />
+        <internalFileTemplate name="quine-jr" />
+        <internalFileTemplate name="random" />
+        <internalFileTemplate name="rename.sh" />
+        <internalFileTemplate name="reverse" />
+        <internalFileTemplate name="rot13" />
+        <internalFileTemplate name="rpn" />
+        <internalFileTemplate name="ryanquine" />
+        <internalFileTemplate name="selfportrait" />
+        <internalFileTemplate name="short" />
+        <internalFileTemplate name="si" />
+        <internalFileTemplate name="sisihi" />
+        <internalFileTemplate name="skiploop" />
+        <internalFileTemplate name="sort" />
+        <internalFileTemplate name="squares" />
+        <internalFileTemplate name="t" />
+        <internalFileTemplate name="tests" />
+        <internalFileTemplate name="text" />
+        <internalFileTemplate name="thuemorse" />
+        <internalFileTemplate name="triangle" />
+        <internalFileTemplate name="u" />
+        <internalFileTemplate name="utm" />
+        <internalFileTemplate name="v" />
+        <internalFileTemplate name="wc" />
+        <internalFileTemplate name="x" />
+        <internalFileTemplate name="xmastree" />
+        <internalFileTemplate name="yapi" />
+        <internalFileTemplate name="y" />
+        <internalFileTemplate name="z2" />
+        <internalFileTemplate name="z3" />
+        <internalFileTemplate name="z4" />
+        <internalFileTemplate name="z5" />
+        <internalFileTemplate name="z6" />
+        <internalFileTemplate name="z7" />
+        <internalFileTemplate name="z9a" />
+        <internalFileTemplate name="z9" />
+        <internalFileTemplate name="z" />
+    </extensions>
+
+    <actions>
+        <action id="io.cronenbergworld.brainfuck.actions.BrainfuckNewFileAction"
+                class="io.cronenbergworld.brainfuck.actions.BrainfuckNewFileAction">
+            <add-to-group group-id="NewGroup"/>
+        </action>
+        <action id="io.cronenbergworld.brainfuck.actions.BrainfuckExamplesFileAction"
+                class="io.cronenbergworld.brainfuck.actions.BrainfuckExamplesFileAction">
+            <add-to-group group-id="NewGroup"/>
+        </action>
+    </actions>
+
+</idea-plugin>

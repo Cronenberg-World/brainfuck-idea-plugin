@@ -1,0 +1,10 @@
+.idea
+.bsp
+**/target
+*.iml
+gen
+*.flex
+*.skeleton
+*.jar
+src/main/scala/_BrainfuckParser_Lexer.java
+src/main/scala/BrainfuckParser_.java

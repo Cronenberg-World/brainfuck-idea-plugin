@@ -1,0 +1,47 @@
+/*
+ * Copyright 2021 the CronenbergWorld Contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+{
+  parserClass="io.cronenbergworld.brainfuck.io.cronenbergworld.brainfuck.BrainfuckParser_"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="Brainfuck"
+  psiImplClassSuffix="Impl"
+  psiPackage="io.cronenbergworld.brainfuck.psi"
+  psiImplPackage="io.cronenbergworld.brainfuck.psi.impl"
+
+  elementTypeHolderClass="io.cronenbergworld.brainfuck.psi.BrainfuckTypes"
+  elementTypeClass="io.cronenbergworld.brainfuck.psi.BrainfuckElementType"
+  tokenTypeClass="io.cronenbergworld.brainfuck.psi.BrainfuckTokenType"
+  psiImplUtilClass="io.cronenbergworld.brainfuck.psi.BrainfuckPsiImplUtil"
+
+  tokens=[
+      WS='regexp:space'
+      LEFT="<"
+      RIGHT=">"
+      ADD='+'
+      MIN='-'
+      DOT='.'
+      COMMA=','
+      LB='['
+      RB=']'
+      LINE_COMMENT='regexp:#.*'
+    ]
+}
+
+compilationUnit ::= (operation)*
+operation ::= '>' | '<' | '+' | '-' | '[' | ']' | '.' | ','
